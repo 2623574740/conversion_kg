@@ -6,7 +6,7 @@ conversion_kg采用2种模式：命令行，UI画面；实现以下2种格式文
 
 # 使用说明
 
-打开CMD（Windows系统）/ Terminal（Mac、Linux系统）按需求选择如下命令并修改参数输入
+打开CMD（Windows系统）按需求选择如下命令并修改参数输入
 
 使用UI界面操作
 ```shell
