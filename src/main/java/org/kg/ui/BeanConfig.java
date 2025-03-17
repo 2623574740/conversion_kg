@@ -1,5 +1,6 @@
 package org.kg.ui;
 
+import org.kg.conversion.lrc.ConversionLrc;
 import org.kg.conversion.music.ConversionMusic;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;
@@ -91,4 +92,12 @@ public class BeanConfig {
     public ConversionMusic conversionMusic(){
         return new ConversionMusic();
     }
+
+    @Bean(name = {"conversionLrc"})
+    @Scope(scopeName = ConfigurableBeanFactory.SCOPE_SINGLETON)
+    public ConversionLrc conversionLrc(){
+        return new ConversionLrc(null,null);
+    }
+
+
 }
